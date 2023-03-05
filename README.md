@@ -35,9 +35,13 @@ This folder is a collection of the programs and utilities I use frequently. Thes
 * bootstrap.sh - Calls all setup.sh scripts
 
 ### Git (git/)
-* setup.sh - Symlinks all git files to `~/`
+* setup.sh - stows git/ directory to home 
 * .gitignore_global - Contains global gitignores, such as OS-specific files and several compiled files
 * .gitconfig - Sets several global Git variables
+
+### Neovim (neovim/)
+* setup.sh - stows neovim/nvim/ directory to home
+* nvim/ - all config for nvim
 
 ### macOS Preferences (macos/)
 * setup.sh - Executes a long list of commands pertaining to macOS Preferences
