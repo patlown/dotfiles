@@ -3,3 +3,5 @@ tap 'neovim/neovim'
 cask 'firefox'
 
 brew 'neovim'
+brew 'tree'
+brew 'stow'

@@ -1,0 +1,4 @@
+[user]
+	name = Pat Lown
+[core]
+	excludesfile = /Users/plown/.gitignore_global
