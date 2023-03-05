@@ -1,0 +1,5 @@
+tap 'neovim/neovim'
+
+cask 'firefox'
+
+brew 'neovim'

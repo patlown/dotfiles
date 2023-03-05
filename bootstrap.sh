@@ -5,6 +5,8 @@ cd "$DIR"
 
 . scripts/functions.sh
 
+print_dotfiles
+
 info "Prompting for sudo password..."
 if sudo -v; then
     # Keep-alive: update existing `sudo` time stamp until `setup.sh` has finished
@@ -25,9 +27,11 @@ fi
 
 # Package control must be executed first in order for the rest to work
 echo "./packages/setup.sh"
+chmod +x ./packages/setup.sh
 ./packages/setup.sh
 
 find * -name "setup.sh" -not -wholename "packages*" | while read setup; do
     echo "./$setup"
+    chmod +x ./$setup
     ./$setup
 done
