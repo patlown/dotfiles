@@ -4,8 +4,8 @@
 1. Generate new SSH keys and add them to your GitHub account
     1. Alternatively, restore your safely backed up SSH keys to `~/.ssh/`
 2. Install Homebrew and git
-  ```bash
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  ```
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   brew install git
   ```
 3. Clone this repository
