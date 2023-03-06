@@ -1,7 +1,10 @@
 tap 'neovim/neovim'
 
 cask 'firefox'
+cask 'iterm2'
 
 brew 'neovim'
+
 brew 'tree'
 brew 'stow'
+
