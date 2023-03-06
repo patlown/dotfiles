@@ -43,6 +43,10 @@ This folder is a collection of the programs and utilities I use frequently. Thes
 * setup.sh - stows neovim/nvim/ directory to home
 * nvim/ - all config for nvim
 
+### Zsh (zsh/)
+* setup.sh - stows .zshrc to home 
+* .zshrc - zsh config file
+
 ### macOS Preferences (macos/)
 * setup.sh - Executes a long list of commands pertaining to macOS Preferences
 
