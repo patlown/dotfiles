@@ -1,0 +1,69 @@
+# ============================================================================
+#                          GHOSTTY CONFIGURATION
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# Font
+# ----------------------------------------------------------------------------
+font-family = "SF Mono"
+font-size = 14
+
+# Alternative fonts (uncomment one if preferred):
+# font-family = "JetBrains Mono"
+# font-family = "Fira Code"
+# font-family = "Hack"
+
+# ----------------------------------------------------------------------------
+# Appearance
+# ----------------------------------------------------------------------------
+# Theme - Ghostty has built-in themes
+# Run `ghostty +list-themes` to see all available themes
+theme = dark:catppuccin-mocha,light:catppuccin-latte
+
+background-opacity = 0.95
+window-padding-x = 10
+window-padding-y = 10
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+
+# ----------------------------------------------------------------------------
+# Behavior
+# ----------------------------------------------------------------------------
+# Copy on select
+copy-on-select = clipboard
+
+# Confirm before closing with running processes
+confirm-close-surface = false
+
+# Mouse
+mouse-hide-while-typing = true
+
+# Shell
+shell-integration = zsh
+
+# ----------------------------------------------------------------------------
+# Keybindings
+# ----------------------------------------------------------------------------
+# Cmd+K to clear screen
+keybind = cmd+k=clear_screen
+
+# Cmd+N for new window
+keybind = cmd+n=new_window
+
+# Cmd+T for new tab
+keybind = cmd+t=new_tab
+
+# Cmd+W to close tab/window
+keybind = cmd+w=close_surface
+
+# ----------------------------------------------------------------------------
+# Window
+# ----------------------------------------------------------------------------
+window-decoration = true
+macos-titlebar-style = tabs
+
+# Initial window size (columns x rows)
+window-width = 120
+window-height = 35

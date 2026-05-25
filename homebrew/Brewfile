@@ -1,0 +1,39 @@
+# === Core Tools ===
+brew "mas"                     # Mac App Store CLI (for installing Xcode)
+brew "stow"                    # Symlink manager for dotfiles
+brew "git"                     # Version control (newer than macOS built-in)
+
+# === Shell Enhancement ===
+brew "starship"                # Fast, customizable prompt
+brew "zsh-autosuggestions"     # Fish-like history suggestions
+brew "zsh-syntax-highlighting" # Command syntax highlighting
+
+# === Modern CLI Replacements ===
+brew "ripgrep"                 # grep replacement (rg) - 10-100x faster
+brew "fd"                      # find replacement - simpler syntax
+brew "fzf"                     # Fuzzy finder for files, history, anything
+brew "eza"                     # ls replacement - colors, git status, icons
+brew "bat"                     # cat replacement - syntax highlighting
+brew "delta"                   # Better git diffs with syntax highlighting
+
+# === Development ===
+brew "neovim"                  # Modern vim with Lua scripting
+brew "mise"                    # Polyglot runtime manager
+brew "uv"                      # Fast Python package/project manager
+brew "pnpm"                    # Fast JavaScript package manager
+brew "kanata"                  # Cross-platform keyboard remapper
+
+# === Terminal ===
+cask "ghostty@tip"             # GPU-accelerated terminal (prerelease builds)
+
+# === GUI Apps ===
+cask "karabiner-elements"      # Virtual HID driver support for Kanata on macOS
+cask "zed"                     # Primary GUI editor
+cask "raycast"                 # Launcher and macOS command surface
+cask "rectangle"               # Keyboard-driven window placement
+cask "logi-options+"           # Logitech mouse/keyboard customization
+cask "jump-desktop-connect"    # Remote desktop client
+# Uncomment as needed:
+# cask "visual-studio-code"
+# cask "docker"
+# cask "1password"

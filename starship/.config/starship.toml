@@ -1,0 +1,95 @@
+# ============================================================================
+#                         STARSHIP PROMPT CONFIG
+#                    Minimal, fast, informative prompt
+# ============================================================================
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Don't print a new line at the start of the prompt
+add_newline = true
+
+# Timeout for commands (ms)
+command_timeout = 500
+
+# ----------------------------------------------------------------------------
+# Prompt format
+# ----------------------------------------------------------------------------
+format = """
+$directory\
+$git_branch\
+$git_status\
+$python\
+$nodejs\
+$rust\
+$golang\
+$cmd_duration\
+$character"""
+
+# ----------------------------------------------------------------------------
+# Directory
+# ----------------------------------------------------------------------------
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+style = "bold cyan"
+
+# ----------------------------------------------------------------------------
+# Git
+# ----------------------------------------------------------------------------
+[git_branch]
+symbol = " "
+style = "bold purple"
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+format = '([$all_status$ahead_behind]($style) )'
+style = "bold red"
+conflicted = "="
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?"
+stashed = "$"
+modified = "!"
+staged = "+"
+renamed = "»"
+deleted = "✘"
+
+# ----------------------------------------------------------------------------
+# Languages (only shown when relevant files detected)
+# ----------------------------------------------------------------------------
+[python]
+symbol = " "
+format = "via [$symbol$version]($style) "
+style = "yellow"
+
+[nodejs]
+symbol = " "
+format = "via [$symbol$version]($style) "
+style = "green"
+
+[rust]
+symbol = " "
+format = "via [$symbol$version]($style) "
+style = "red"
+
+[golang]
+symbol = " "
+format = "via [$symbol$version]($style) "
+style = "cyan"
+
+# ----------------------------------------------------------------------------
+# Command duration (only if > 2 seconds)
+# ----------------------------------------------------------------------------
+[cmd_duration]
+min_time = 2_000
+format = "took [$duration]($style) "
+style = "yellow"
+
+# ----------------------------------------------------------------------------
+# Prompt character
+# ----------------------------------------------------------------------------
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
