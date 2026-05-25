@@ -162,7 +162,7 @@ install_packages() {
     )
 
     # Brew casks that install cleanly without privileged package installers.
-    local casks=("ghostty@tip" "zed" "raycast" "rectangle" "jump-desktop-connect")
+    local casks=("ghostty@tip" "zed" "raycast" "rectangle")
 
     # Install formulae
     for pkg in "${brews[@]}"; do

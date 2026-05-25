@@ -95,9 +95,14 @@ Kanata notes live in [docs/kanata-macos.md](docs/kanata-macos.md).
 - Zed
 - Raycast
 - Rectangle
-- Jump Desktop Connect
 - Karabiner Elements, manual install when needed
 - Logi Options+, manual install when needed
+
+Optional apps can be installed manually when needed:
+
+```sh
+brew install --cask jump-desktop-connect
+```
 
 ## Stow Packages
 
